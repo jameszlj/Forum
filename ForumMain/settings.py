@@ -3,10 +3,13 @@
 # datetime:2020/4/26 20:18
 import os
 
+from tornado.web import StaticFileHandler
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 settings = {
     "static_path": os.path.join(BASE_DIR, "static"),
-    "static_url_prefix": "/static",
+    # "static_url_prefix": "/static",
+    'static_handler_class': StaticFileHandler,
     "template_path": os.path.join(BASE_DIR, "templates"),
     # custom
     "media_root": os.path.join(BASE_DIR, "media"),

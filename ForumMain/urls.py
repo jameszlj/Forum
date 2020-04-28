@@ -9,5 +9,4 @@ from ForumMain.settings import settings
 
 urlpattern = [
     (url(r"/(.*)", StaticFileHandler, {"path":settings['template_path'],'default_filename': "index.html"})),
-(url(r"/static/(.*)", StaticFileHandler, {"path":settings['template_path'],'default_filename': "index.html"}))
 ]

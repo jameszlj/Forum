@@ -9,7 +9,7 @@
     <meta property="wb:webmaster" content="fdcd9430a88b1552" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Access-Control-Allow-Origin" content="*">
-    <link href="../../../static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 <div  id="content">
@@ -17,7 +17,7 @@
     <div class="header_new2">
         <div class="top1">
             <div class="top1img">
-                <a href="index.html" title="小组" style="display: block;float: left;"><img src="{{static_url('images/logo.png')}}" width="150"/></a>
+                <a href="index.html" title="小组" style="display: block;float: left;"><img src="/static/images/logo.png" width="150"/></a>
             </div>
 
             <div class="nav">
@@ -26,7 +26,7 @@
                         <a href="#" target="_self">社区</a>
                     </li>
                     <li >
-                    <a href="../question/questionsList.html" target="_self">问答</a>
+                    <a href="questionsList.html" target="_self">问答</a>
                     </li>
                 </ul>
             </div>
@@ -39,15 +39,15 @@
                         <a href="#">{{user}}</a>
                         <i class="icon-nav-arrow"></i>
                     </li>
-                    <li class="fr" v-if="notLogin ===false" style="margin-top: 10px;font-size: 14px;color:#fff;"><a href="../../login.html">登录 </a> | <a href="../../register.html" style="cursor: pointer;"> 注册</a>
+                    <li class="fr" v-if="notLogin ===false" style="margin-top: 10px;font-size: 14px;color:#fff;"><a href="login.html">登录 </a> | <a href="register.html" style="cursor: pointer;"> 注册</a>
                     </li>
                     <dl class="login-after-position" v-show="notLogin === true">
 
                         <dd class="login-after-bdbt"><a
-                                href="../personalCenter/changeMyInfo.html">我的设置</a>
+                                href="changeMyInfo.html">我的设置</a>
                         </dd>
                         <dd class="login-after-bdbt"><a
-                                href="../personalCenter/myMsg.html">我的消息</a>
+                                href="myMsg.html">我的消息</a>
                         </dd>
                         <dd class="login-after-bdbt"><a href="javascript:;" onclick="logout()">退出</a></dd>
                     </dl>
