@@ -487,7 +487,7 @@ function logout(){
     this.$cookies.remove('nick_name');
     this.$cookies.remove('user_id');
 
-    location.href="/html/group/group.html";
+    location.href="/html/group/index.html";
 
 }
 /**
