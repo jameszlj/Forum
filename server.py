@@ -13,5 +13,6 @@ define("port", default=8080, help="run on the given port ", type=int)
 if __name__ == '__main__':
     tornado.options.parse_command_line()
     app = web.Application(urlpattern, debug=True, **settings)
+    print('Server started.')
     app.listen(options.port)
     tornado.ioloop.IOLoop.current().start()
